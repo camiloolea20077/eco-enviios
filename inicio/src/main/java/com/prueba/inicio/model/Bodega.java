@@ -11,6 +11,9 @@ public class Bodega {
     private String nombre;
     private String ubicacion;
 
+    /**
+     * @return the id
+     */
     public Long getId(){
         return id;
     }
