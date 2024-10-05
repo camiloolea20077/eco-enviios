@@ -7,6 +7,7 @@ import { TerrestreComponent } from './components/terrestre/terrestre.component';
 import { MaritimoComponent } from './components/maritimo/maritimo.component';
 import { BodegaComponent } from './components/bodega/bodega.component';
 import { PuertoComponent } from './components/puerto/puerto.components';
+import { PaginaPrincipalComponent } from './pages/pagina/pagina-principal.component';
 
 const routes: Routes = [
   { path: 'bodegas', component: BodegaComponent },
@@ -14,9 +15,10 @@ const routes: Routes = [
   { path: 'envios-terrestres', component: TerrestreComponent },
   { path: 'envios-maritimos', component: MaritimoComponent },
   { path: 'clientes', component: ClienteComponent },
-  {path:'',redirectTo:'/inicio', pathMatch:'full'},
+  {path:'',redirectTo:'/principal', pathMatch:'full'},
   {path:'inicio',component:DashboardComponent},
-  {path:'iniciar-sesion',component:LoginComponent}
+  {path:'iniciar-sesion',component:LoginComponent},
+  {path:'principal',component:PaginaPrincipalComponent}
 ];
 
 @NgModule({
