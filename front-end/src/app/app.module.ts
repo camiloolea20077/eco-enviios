@@ -11,8 +11,6 @@ import { NavComponent } from './shared/nav/nav.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { PersonalDetailsComponent } from './components/personal-details/personal-details.component';
-import { UserService } from './services/user/user.service';
-import { LoginService } from './services/auth/login.service';
 import { JwtInterceptorService } from './services/auth/jwt-interceptor.service';
 import { ErrorInterceptorService } from './services/auth/error-interceptor.service';
 import { ClienteService } from './services/cliente.service';
