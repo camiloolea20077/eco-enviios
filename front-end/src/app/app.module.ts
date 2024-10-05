@@ -26,6 +26,14 @@ import { BodegaService } from './services/bodega.service';
 import { BodegaComponent } from './components/bodega/bodega.component';
 import { PuertoService } from './services/puerto.service';
 import { PuertoComponent } from './components/puerto/puerto.components';
+// Importa los módulos de PrimeNG que necesitas
+import { MenubarModule } from 'primeng/menubar';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { CarouselModule } from 'primeng/carousel';
+import { CardModule } from 'primeng/card';
+import { MenuModule } from 'primeng/menu';
+import { PaginaPrincipalComponent } from "./pages/pagina/pagina-principal.component";
 
 @NgModule({
   declarations: [
@@ -47,8 +55,15 @@ import { PuertoComponent } from './components/puerto/puerto.components';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    FormsModule
-  ],
+    FormsModule,
+    MenubarModule,
+    ButtonModule,
+    InputTextModule,
+    CarouselModule,
+    CardModule,
+    MenuModule,
+    PaginaPrincipalComponent
+],
   providers: [
     ClienteService,
     TerrestreService,
